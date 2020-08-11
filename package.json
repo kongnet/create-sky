@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "create-sky": "./bin/create-sky.js"
+    "create-sky": "bin/create-sky.js"
   },
-  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cz": "git add . && git status && git cz",
@@ -30,7 +29,5 @@
       "path": "./node_modules/cz-jt"
     }
   },
-  "files": [
-    "./bin"
-  ]
+  "files": ["bin/**/*"]
 }
