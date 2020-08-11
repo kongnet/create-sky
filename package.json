@@ -1,6 +1,6 @@
 {
   "name": "create-sky",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -30,5 +30,7 @@
       "path": "./node_modules/cz-jt"
     }
   },
-  "files": ["bin/**/*"]
+  "files": [
+    "bin/**/*"
+  ]
 }
