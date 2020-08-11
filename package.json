@@ -3,9 +3,14 @@
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
-  "bin": "index.js",
+  "bin": {
+    "create-sky": "./index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cz": "conventional-changelog -p atom -i CHANGELOG.md -s -r 0 && git add . && git status && git cz",
+    "push": "npm version patch && npm publish . && git push",
+    "create-sky": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/kongnet/create-sky/issues"
   },
-  "homepage": "https://github.com/kongnet/create-sky#readme"
+  "homepage": "https://github.com/kongnet/create-sky#readme",
+  "devDependencies": {
+    "cz-jt": "^0.1.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-jt"
+    }
+  }
 }
