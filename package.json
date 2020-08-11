@@ -3,14 +3,11 @@
   "version": "1.0.3",
   "description": "",
   "main": "index.js",
-  "bin": {
-    "create-sky": "./index.js"
-  },
+  "bin": "create-sky",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cz": "conventional-changelog -p atom -i CHANGELOG.md -s -r 0 && git add . && git status && git cz",
-    "push": "npm version patch && npm publish . && git push",
-    "create-sky": "node index.js"
+    "push": "npm version patch && npm publish . && git push"
   },
   "repository": {
     "type": "git",
