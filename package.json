@@ -1,9 +1,11 @@
 {
   "name": "create-sky",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
-  "bin": { "create-sky": "./bin/create-sky.js" },
+  "bin": {
+    "create-sky": "./bin/create-sky.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cz": "git add . && git status && git cz",
@@ -27,5 +29,7 @@
       "path": "./node_modules/cz-jt"
     }
   },
-  "files": ["./bin"]
+  "files": [
+    "./bin"
+  ]
 }
