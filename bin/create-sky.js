@@ -1,2 +1,3 @@
 #!/usr/bin/env node
-console.log('xxxx')
+const $ = require('meeko')
+console.log('欢迎使用Sky工具')

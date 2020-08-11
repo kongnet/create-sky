@@ -32,5 +32,8 @@
   },
   "files": [
     "bin/**/*"
-  ]
+  ],
+  "dependencies": {
+    "meeko": "^1.8.130"
+  }
 }
