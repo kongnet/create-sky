@@ -22,7 +22,8 @@ async function main () {
   //console.log(r)
   switch (r.templateId) {
     case 3:
-      console.log('PATH:', __dirname)
+      console.log('PATH1:', __dirname)
+      console.log('PATH2:', process.cwd())
       require(path.join(__dirname, '../template/gen-db.js'))
       break
   }
