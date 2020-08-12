@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 const $ = require('meeko')
+const path = require('path')
 console.log('===========', $.c.y('欢迎使用Sky工具'), '===========')
 const inquirer = require('inquirer')
 const questionArr = [
@@ -20,7 +21,7 @@ async function main () {
   //console.log(r)
   switch (r.templateId) {
     case 3:
-      require('../template/gen-db.js')
+      require(path.join(__dirname, '../template/gen-db.js'))
       break
   }
 }
