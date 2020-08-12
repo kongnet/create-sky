@@ -1,6 +1,6 @@
 {
   "name": "create-sky",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -31,7 +31,10 @@
       "path": "./node_modules/cz-jt"
     }
   },
-  "files": ["bin/**/*", "template/**/*"],
+  "files": [
+    "bin/**/*",
+    "template/**/*"
+  ],
   "dependencies": {
     "inquirer": "^7.3.3",
     "meeko": "^1.8.130"
