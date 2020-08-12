@@ -42,7 +42,7 @@ async function allColumnList () {
   let n = 1
   let r = await db.run(columnSql)
   let tableArr = r
-    .filter(item => item['db_name'].indexOf('ft') === 0)
+    //.filter(item => item['db_name'].indexOf('ft') === 0) 可过滤
     .map(x => {
       return [
         n++,
@@ -88,7 +88,7 @@ async function tableColumnList () {
   let htmlStr = ''
   let columnArr = []
   let tableArr = r
-    .filter(item => item['db_name'].indexOf('ft') === 0)
+    //.filter(item => item['db_name'].indexOf('ft') === 0) //可过滤
     .map(x => {
       if (tableDiffName !== x.table_name) {
         n++
@@ -136,6 +136,7 @@ async function tableColumnList () {
   process.exit(0)
 }
 async function mainTest () {
+  //测试函数
   await allColumnList()
   //await tableColumnList()
 }
