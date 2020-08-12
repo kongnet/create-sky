@@ -1,6 +1,6 @@
 {
   "name": "create-sky",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -31,7 +31,11 @@
       "path": "./node_modules/cz-jt"
     }
   },
-  "files": ["bin/**/*", "template/**/*", "template/**/.gitignore"],
+  "files": [
+    "bin/**/*",
+    "template/**/*",
+    "template/**/.gitignore"
+  ],
   "dependencies": {
     "inquirer": "^7.3.3",
     "j2dir": "^0.1.14",
