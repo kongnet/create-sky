@@ -3,6 +3,7 @@ const $ = require('meeko')
 const path = require('path')
 console.log('===========', $.c.y('欢迎使用Sky工具'), '===========')
 const inquirer = require('inquirer')
+const { dirname } = require('path')
 const questionArr = [
   {
     type: 'list',
@@ -21,6 +22,7 @@ async function main () {
   //console.log(r)
   switch (r.templateId) {
     case 3:
+      console.log('PATH:', __dirname)
       require(path.join(__dirname, '../template/gen-db.js'))
       break
   }
