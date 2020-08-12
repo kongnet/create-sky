@@ -1,0 +1,16 @@
+{
+  "name": "db-report",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "j2dir": "^0.1.14",
+    "j2sql2": "^1.9.94",
+    "meeko": "^1.8.130"
+  }
+}
