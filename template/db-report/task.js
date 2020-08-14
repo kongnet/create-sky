@@ -85,5 +85,6 @@ async function main () {
     cwd: r['project-path']
   })
   cp.execSync('node index', { cwd: r['project-path'] })
+  console.log($.c.m('mysql-output.html'), '已经生成')
 }
 main()
