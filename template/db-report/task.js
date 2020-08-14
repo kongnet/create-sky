@@ -80,8 +80,8 @@ async function main () {
     JSON.stringify(optObj)
   )
   console.log('Mysql 库表结构模板生成完成！')
-  await execFile('cd', [r['project-path']])
-  await execFile('npm ', ['i --registry=https://registry.npm.taobao.org'])
+  await execFile('cmd', ['cd', r['project-path']])
+  await execFile('cmd', ['npm', 'i --registry=https://registry.npm.taobao.org'])
   await execFile('node', [])
 }
 main()
