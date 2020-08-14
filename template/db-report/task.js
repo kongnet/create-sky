@@ -4,6 +4,7 @@ const path = require('path')
 const inquirer = require('inquirer')
 const gen = require('j2dir')
 const outObj = require('./output-file.js')
+const execFile = util.promisify(require('child_process').execFile)
 const mysqlDefaultOption = {
   host: '127.0.0.1',
   port: '3306',
@@ -78,5 +79,8 @@ async function main () {
     JSON.stringify(optObj)
   )
   console.log('Mysql 库表结构模板生成完成！')
+  await execFile('cd', [r['project-path']])
+  await execFile('npm ', ['i --registry=https://registry.npm.taobao.org'])
+  await execFile('node', [])
 }
 main()
