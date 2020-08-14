@@ -3,6 +3,7 @@ const fs = require('fs')
 const path = require('path')
 const inquirer = require('inquirer')
 const gen = require('j2dir')
+const util = require('util')
 const outObj = require('./output-file.js')
 const execFile = util.promisify(require('child_process').execFile)
 const mysqlDefaultOption = {
