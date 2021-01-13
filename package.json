@@ -38,6 +38,6 @@
   "dependencies": {
     "inquirer": "^7.3.3",
     "j2dir": "^0.1.14",
-    "meeko": "^1.8.130"
+    "meeko": "*"
   }
 }

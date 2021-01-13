@@ -20,7 +20,7 @@ const mysqlDefaultOption = {
   connectionLimit: 100,
   showSql: true
 }
-async function main () {
+async function main() {
   let r = await inquirer.prompt([
     {
       name: 'project-path',
@@ -86,5 +86,6 @@ async function main () {
   })
   cp.execSync('node index', { cwd: r['project-path'] })
   console.log($.c.m('mysql-output.html'), '已经生成')
+  process.exit(0)
 }
 main()
