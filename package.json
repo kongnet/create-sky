@@ -8,6 +8,7 @@
     "sky": "bin/create-sky.js"
   },
   "scripts": {
+    "gen": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "cz": "npm-publish-bin && git add . && git status && git cz",
     "push": "npm version patch && npm publish . && git push"
