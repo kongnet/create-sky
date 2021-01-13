@@ -10,3 +10,4 @@ package-lock.json
 .scannerwork
 .nyc_output
 mochawesome-report
+.vscode
